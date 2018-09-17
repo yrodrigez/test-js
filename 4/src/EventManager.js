@@ -1,3 +1,4 @@
+
 export default class EventManager {
     constructor(events, types) {
         this.events = events;

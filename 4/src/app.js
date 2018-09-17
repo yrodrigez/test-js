@@ -1,5 +1,13 @@
 let xhttp = new XMLHttpRequest();
 import EventManagerFactory from './EventManagerFactory';
+import Timer from './Timer';
+
+let durationSeconds = 0;
+
+let timer = new Timer();
+timer.subscribe(function (time) {
+    durationSeconds = time;
+});
 
 let onReadyStateChange = function (onSuccess) {
     return function () {
