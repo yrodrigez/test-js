@@ -47,3 +47,8 @@ Para empezar a desarrollar tendremos que instalar algunas librerías que están 
 
 Posteriormente, con el objetivo de compilar el código y que esta tarea se ejecute con cada cambio sobre los archivos, tendremos que ejecutar el siguiente comando: 
 - `webpack --watch`
+
+***
+Este proyecto tiene un problema con la configuracion del babel que no he identificado
+Igualmente he resuelto siguiendo la explicacion.
+***
