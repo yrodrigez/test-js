@@ -1,6 +1,13 @@
-export default class EventManager{
+export default class EventManager {
+    constructor(events, types) {
+        this.events = events;
+        this.types = types
+    }
+
     run() {
-        // implement your code here...
-        console.log("RUNNING");
+        this.events.forEach(e => {
+            if (this.types.find(t => t === e.type))
+                console.log(e.toString())
+        })
     }
 };

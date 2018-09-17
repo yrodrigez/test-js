@@ -1,3 +1,11 @@
 export default class Event{
-// implement your code here...
+    constructor({name: message, type, second}){
+        this.message = message;
+        this.type = type;
+        this.second = second;
+    }
+
+    toString(){
+        return `At second ${this.second}: {type: "${this.type}", message: "${this.message}"}`
+    }
 };
